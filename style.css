@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #f4f4f4;
+}
+
+/* ===== HEADER ===== */
+header {
+    background: url("https://picsum.photos/1200/300") center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 30px 10px;
+}
+
+header img {
+    width: 80px;
+}
+
+header h1 {
+    margin: 10px 0;
+}
+
+header p {
+    font-style: italic;
+}
+
+/* ===== MENU ===== */
+nav {
+    background: #333;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background: #555;
+}
+
+/* Sub menu */
+nav ul li ul {
+    display: none;
+    position: absolute;
+    background: #444;
+    top: 100%;
+    left: 0;
+    min-width: 180px;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul li ul li a {
+    padding: 10px;
+}
+
+/* ===== MAIN ===== */
+main {
+    padding: 20px;
+    background: white;
+    min-height: 300px;
+}
+
+/* ===== FORM ===== */
+form {
+    max-width: 500px;
+    margin: auto;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+form button {
+    margin-top: 15px;
+    padding: 10px;
+    width: 100%;
+    background: #333;
+    color: white;
+    border: none;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
